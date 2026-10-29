@@ -5,6 +5,7 @@ OVERLAYS
 
 BUTTONS
     "> Settings","> Saituna"
+    "return confirm\('Log out\?'\)","return confirm('Fita?')"
 
 
 MENU ITEMS
@@ -21,6 +22,7 @@ CURRENT PAGE
     ">Page keywords",">Kalmomin shafi"
     ">Page description",">Bayanin shafi"
     "> Delete page","> Goge shafi"
+    "return confirm\('Delete (.*?)\?'\)","return confirm('Goge $1?')"
     "data-confirm=""Delete (.*?)\?""","data-confirm=""Goge $1?"""
 
 
@@ -28,6 +30,10 @@ MENU
     ">Website title","> Taken shafin yanar gizo"
     ">Page to display on homepage","> Shafi domin nunawa akan shafin farko"
     ">visit",">ziyarci"
+    "title=""Make page private \(only you see it while logged in\)""","title=""Mayar da shafin na sirri (ku kaɗai kuke ganinsa idan kun shiga)"""
+    "title=""Make page public""","title=""Mayar da shafin na jama'a"""
+    "lockIcon""><\/i> private<\/a>","lockIcon""></i> na sirri</a>"
+    "lockIcon""><\/i> public<\/a>","lockIcon""></i> na jama'a</a>"
     "> Add page","> Kara shafi"
 
 
@@ -38,15 +44,24 @@ FILES
 
 THEMES AND PLUGINS
     "> Check for updates","> Bincika sabuntawa"
+    "title=""Remove this repository from the list""","title=""Cire wannan ma'ajiya daga jerin"""
+    "data-confirm=""Remove (.*?)\? Anything installed from it stays\.""","data-confirm=""Cire $1? Duk abin da aka girka daga ciki zai ci gaba da kasancewa."""
+    "return confirm\('Remove (.*?)\?'\)","return confirm('Cire $1?')"
     "data-confirm=""Remove (.*?)\?""","data-confirm=""Cire $1?"""
     ">Active",">Yana kan aiki"
+    "return confirm\('Activate (.*?) theme\?'\)","return confirm('Kunna $1?')"
     "data-confirm=""Activate (.*?) theme\?""","data-confirm=""Kunna $1?"""
+    "data-confirm=""Disable (.*?)\?""","data-confirm=""Kashe $1?"""
+    "data-confirm=""This is an (.*?) plugin\. Installing (.*?) will disable (.*?)\. Continue\?""","data-confirm=""Wannan kaya ne na rukunin $1. Girka $2 zai kashe $3. A ci gaba?"""
+    "data-confirm=""This is an (.*?) plugin\. Updating (.*?) will keep it enabled and disable (.*?)\. Continue\?""","data-confirm=""Wannan kaya ne na rukunin $1. Sabunta $2 zai bar shi a kunne kuma ya kashe $3. A ci gaba?"""
+    "data-confirm=""This is an (.*?) plugin\. Enabling (.*?) will disable (.*?)\. Continue\?""","data-confirm=""Wannan kaya ne na rukunin $1. Kunna $2 zai kashe $3. A ci gaba?"""
     "> Activate","> Kunna"
     "> More info","> Karin bayani"
     "> Install","> Girka"
     ">Installed version:",">Girkakkiyar siga:"
     ">Custom repository",">Ma'ajiya ta al'ada"
     "Enter URL to custom repository","Shigar da url na ma'ajiyar al'ada"
+    "return confirm\('Adding unknown modules can be VERY dangerous, are you sure you want to continue\?'\)","return confirm('Ƙara kayayyakin da ba a sani ba na iya zama MATUƘAR haɗari, kun tabbata kuna son ci gaba?')"
     "> Add", "> Kara"
     "> Read more about custom repositories",">Karanta game da wurin ajiya na al'ada"
 
@@ -64,6 +79,7 @@ SECURITY
     ">HTTPS redirect, 30 day caching, iframes allowed only from same origin, mime type sniffing prevention, stricter cookie and refferer policy.",">Sauyawa zuwa HTTPS, caching na tsawon kwana 30, yarje wa iframe idan daga asali daya ne kawai, rigakafin gurbatattun nau'ikan mime, manufofin cookie mai turawa da mai nunawa."
     ">ON \(warning: may break your website\)",">KUNNA (gargadi: na iya karya shafin yanar gizon ku)"
     ">OFF \(reset htaccess to default\)",">KASHE (sake saita htaccess zuwa tsoho)"
+    "return confirm\('Are you sure\? This might break your website if you do not have SSL configured correctly\.'\)","return confirm('Kun tabbata? Wannan na iya lalata shafinku idan ba a saita SSL daidai ba.')"
     "> Read more before enabling","> Kara karantawa kafin ku kunna"
     ">Backup","> Ajiye shafi"
     "> Backup website","> Ajiye shafin yanar gizo"
