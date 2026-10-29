@@ -22,6 +22,7 @@ CURRENT PAGE
     ">Page description",">Bayanin shafi"
     "> Delete page","> Goge shafi"
     "return confirm\('Delete (.*?)\?'\)","dawo tabbatar('Goge $1?')"
+    "data-confirm=""Delete (.*?)\?""","data-confirm=""Goge $1?"""
 
 
 MENU
@@ -39,8 +40,10 @@ FILES
 THEMES AND PLUGINS
     "> Check for updates","> Bincika sabuntawa"
     "return confirm\('Remove (.*?)\?'\)","dawo tabbatar('Cire $1?')"
+    "data-confirm=""Remove (.*?)\?""","data-confirm=""Cire $1?"""
     ">Active",">Yana kan aiki"
     "return confirm\('Activate (.*?) theme\?'\)","dawo tabbatar('Kunna $1?')"
+    "data-confirm=""Activate (.*?) theme\?""","data-confirm=""Kunna $1?"""
     "> Activate","> Kunna"
     "> More info","> Karin bayani"
     "> Install","> Girka"
